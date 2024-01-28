@@ -16,24 +16,6 @@ cd proyecto-karate-dsl
 Ejecutar las Pruebas:
 mvn test
 
-Ejempl;o de Estructura del Proyecto:
-
-proyecto-karate-dsl
-│
-├── src
-│   ├── test
-│   │   ├── java
-│   │   │   ├── com
-│   │   │   │   ├── ejemplo
-│   │   │   │   │   ├── api
-│   │   │   │   │   │   ├── features
-│   │   │   │   │   │   │   ├── Ejemplo.feature
-│   │   │   │   │   │   ├── utils
-│   │   │   │   │   │   │   ├── CommonUtils.java
-│   │   │   │   │   │   │   ├── TestConfig.java
-│   │   │   │   │   │   ├── KarateTestRunner.java
-
-
 Ejemplo.feature: Archivo de especificación de la prueba escrito en Gherkin.
 CommonUtils.java: Clase con métodos de utilidad compartidos para las pruebas.
 TestConfig.java: Configuración del entorno y variables globales para las pruebas.
