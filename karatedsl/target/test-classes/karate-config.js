@@ -1,4 +1,7 @@
 function fn() {
+
+karate.configure("logPrettyRequest", true);
+
   var env = karate.env; // get system property 'karate.env'
   karate.log('karate.env system property was:', env);
   if (!env) {
@@ -16,3 +19,6 @@ function fn() {
   }
   return config;
 }
+
+
+

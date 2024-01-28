@@ -1,10 +1,10 @@
-Feature: sample karate test script
+Feature: ejemplo de script de prueba de karate
   for help, see: https://github.com/karatelabs/karate/wiki/IDE-Support
 
   Background:
     * url 'https://jsonplaceholder.typicode.com'
 
-  Scenario: get all users and then get the first user by id
+  Scenario: obtener todos los usuarios y luego obtener el primer usuario por id
     Given path 'users'
     When method get
     Then status 200
