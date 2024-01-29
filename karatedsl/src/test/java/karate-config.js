@@ -18,9 +18,9 @@ function fn() {
   return configMichael;
 
     var configJair = {
-      baseUrl:
+      baseUrl_encryptions:
                 "https://apic-gw-smp.apps.integracion.grupoib.local",
-              headers: {
+              headers_encryptions: {
                 "Content-Type": "application/x-www-form-urlencoded",
               },
               body: {

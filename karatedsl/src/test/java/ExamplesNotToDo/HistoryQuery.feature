@@ -12,6 +12,7 @@ Feature: Consulta de Historial de Movimientos de Prestamos
 
   Scenario Outline: Realizar la consulta exitosa de 5 préstamo existentes
     And header Authorization = 'Bearer ' + token
+    # Lo que no se tiene que hacer separar el header campo por campo, esta configuracion se debe registrar en el archivo karate-config.js
     And headers { 'traceparent': '#(traceparent)' }
     And headers { 'consumerId': '#(consumerId)' }
     And headers { 'deviceType': '#(deviceType)' }

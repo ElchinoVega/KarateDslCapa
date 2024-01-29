@@ -8,8 +8,10 @@ Feature: Consulta de Historial de movimientos de prestamo.
 #    * def token = read('TokenResponseAPI.json').data.accessToken
 #    * def monitordata = read(monitordata.json).monitorData
 
-  Scenario: Validar que se realice la consulta exitosa de un prestamo LoanId
+  Scenario: Validar que se realice la consulta exitosa de un prestamo
     Given path '/smp-loan/v1/payment-history'
+
+    # Lo que no se tiene que hacer separar el header campo por campo, esta configuracion se debe registrar en el archivo karate-config.js
     And param loanId = '00044756'
     And param subProductCode = '821'
     And param page = '1'
